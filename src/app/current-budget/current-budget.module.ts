@@ -1,19 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ViewMessagePage } from './view-message.page';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ViewMessagePageRoutingModule } from './view-message-routing.module';
+import { CurrentBudgetPageRoutingModule } from './current-budget-routing.module';
+
+import { CurrentBudgetPage } from './current-budget.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ViewMessagePageRoutingModule
+    CurrentBudgetPageRoutingModule
   ],
-  declarations: [ViewMessagePage]
+  declarations: [CurrentBudgetPage]
 })
-export class ViewMessagePageModule {}
+export class CurrentBudgetPageModule {}

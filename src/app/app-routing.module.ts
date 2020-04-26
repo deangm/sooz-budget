@@ -7,13 +7,13 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'message/:id',
-    loadChildren: () => import('./view-message/view-message.module').then( m => m.ViewMessagePageModule)
-  },
-  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'current-budget',
+    loadChildren: () => import('./current-budget/current-budget.module').then( m => m.CurrentBudgetPageModule)
   },
 ];
 
