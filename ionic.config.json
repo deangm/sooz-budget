@@ -1,0 +1,7 @@
+{
+  "name": "sooz_budget",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

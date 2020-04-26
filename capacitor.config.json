@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "sooz_budget",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
