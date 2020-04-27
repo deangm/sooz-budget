@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Category } from './interface/category';
+import { CategoryService } from './services/category.service';
 
 @Component({
   selector: 'app-current-budget',
@@ -6,10 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./current-budget.page.scss'],
 })
 export class CurrentBudgetPage implements OnInit {
-
-  constructor() { }
+  categorie$: Observable<Category[]>
+  constructor(
+    private categoryService: CategoryService
+  ) { }
 
   ngOnInit() {
+    this.categorie$ = this.categoryService.getCategoriesObservable()
   }
 
 }

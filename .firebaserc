@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "sooz-budget"
+  },
+  "targets": {
+    "sooz-budget": {
+      "hosting": {
+        "app": [
+          "sooz-budget"
+        ]
+      }
+    }
   }
 }
