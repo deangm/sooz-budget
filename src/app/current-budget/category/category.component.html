@@ -1,9 +1,8 @@
-
-<div style = "display: flex; justify-content: space-between; padding: 20px;">
-  <div>
-    {{category.name}}
-  </div>
-  <div>
-    ${{category.spent}}/${{category.allowed_amount}}
-  </div>
-</div>
+<ion-item>
+  {{category.name}}
+</ion-item>
+<ion-item-options slot="end">
+  <button ion-button (click)="deleteCategory(category.id)">
+    <ion-icon name="trash"></ion-icon>Delete
+  </button>
+</ion-item-options>

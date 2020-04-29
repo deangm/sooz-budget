@@ -33,6 +33,14 @@ getCategoriesObservable(): Observable<Category[]>{
   )
 }
 
+addCategory(cat: Category){
+  return this.categoriesRef.add(cat)
+}
+
+deleteCategory(id){
+  return this.categoriesRef.doc(id).delete()
+}
+
 private errorHandler(error) {
   console.log(error);
   return throwError(error);

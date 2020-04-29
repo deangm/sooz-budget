@@ -18,4 +18,8 @@ export class CurrentBudgetPage implements OnInit {
     this.categorie$ = this.categoryService.getCategoriesObservable()
   }
 
+  addCategory(){
+    this.categoryService.addCategory({name: "new item", allowed_amount: 0, spent: 0})
+  }
+
 }
